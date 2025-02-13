@@ -1,0 +1,112 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: blue;
+    text-decoration: underline;
+}
+
+/* Navbar Styling */
+.nav-bar {
+    background-color: #f8f9fa;
+    padding: 10px 0;
+}
+
+.logo h3 {
+    font-size: 22px;
+    color: blue;
+    font-style: italic;
+}
+
+.logo p {
+    font-size: 12px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-box {
+    width: 70%;
+    height: 35px;
+    border-radius: 15px;
+    padding: 5px 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+}
+
+.user-options {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.user-options img {
+    width: 30px;
+    height: 30px;
+}
+
+/* Ad Section */
+.ad-section img {
+    width: 16.66%; /* 1/6 of the page width */
+    height: auto;
+    object-fit: contain;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/* Product Section */
+.section-title {
+    margin-top: 20px;
+    font-size: 24px;
+    color: blue;
+    font-style: italic;
+    text-align: center;
+}
+
+.product-section {
+    margin-bottom: 30px;
+}
+
+.product-image {
+    width: 16.66%; /* 1/6 of the page width */
+    height: auto;
+    object-fit: contain;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.product-image:hover {
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .search-box {
+        width: 100%;
+    }
+
+    .user-options {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .user-options a {
+        margin-bottom: 5px;
+    }
+
+    .ad-section img,
+    .product-image {
+        width: 50%; /* Make images smaller on mobile */
+    }
+}
+
