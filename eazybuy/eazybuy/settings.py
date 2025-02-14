@@ -1,6 +1,6 @@
 import os
 from pathlib import Path
-from decouple import config, Csv
+from decouple import config
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -14,7 +14,9 @@ SECRET_KEY = 'django-insecure-kcd&+9z%y)_ms%3t*#k!liab_wetq=_0b5*62v8568j&6&chk6
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = config('DEBUG', default=False, cast=bool)
 
-ALLOWED_HOSTS = config('3.7.211.92',  cast=Csv())
+ALLOWED_HOSTS = ['*']
+
+# ALLOWED_HOSTS = config('ALLOWED_HOSTS', default='localhost', cast=Csv())
 
 # Application definition
 
